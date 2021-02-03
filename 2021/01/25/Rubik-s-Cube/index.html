@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+<meta name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <meta name="author" content="RogeWood">
+
+
+
+    <meta name="description" content="廢物高三生">
+
+
+
+<title>Rubik&#39;s Cube | RogeWood&#39;s Blog</title>
+
+
+
+    <link rel="icon" href="/image/icon.ico">
+
+
+
+
+    <!-- stylesheets list from _config.yml -->
+    
+    <link rel="stylesheet" href="/css/style.css">
+    
+
+
+
+    <!-- scripts list from _config.yml -->
+    
+    <script src="/js/script.js"></script>
+    
+    <script src="/js/tocbot.min.js"></script>
+    
+
+
+
+    
+    
+        
+    
+
+
+<meta name="generator" content="Hexo 5.3.0"></head>
+<body>
+    <div class="wrapper">
+        <header>
+    <nav class="navbar">
+        <div class="container">
+            <div class="navbar-header header-logo"><a href="/">RogeWood&#39;s Blog</a></div>
+            <div class="menu navbar-right">
+                
+                    <a class="menu-item" href="/archives">Posts</a>
+                
+                    <a class="menu-item" href="/category">Categories</a>
+                
+                    <a class="menu-item" href="/tag">Tags</a>
+                
+                    <a class="menu-item" href="/about">About</a>
+                
+                <input id="switch_default" type="checkbox" class="switch_default">
+                <label for="switch_default" class="toggleBtn"></label>
+            </div>
+        </div>
+    </nav>
+
+    
+    <nav class="navbar-mobile" id="nav-mobile">
+        <div class="container">
+            <div class="navbar-header">
+                <div>
+                    <a href="/">RogeWood&#39;s Blog</a><a id="mobile-toggle-theme">·&nbsp;Light</a>
+                </div>
+                <div class="menu-toggle" onclick="mobileBtn()">&#9776; Menu</div>
+            </div>
+            <div class="menu" id="mobile-menu">
+                
+                    <a class="menu-item" href="/archives">Posts</a>
+                
+                    <a class="menu-item" href="/category">Categories</a>
+                
+                    <a class="menu-item" href="/tag">Tags</a>
+                
+                    <a class="menu-item" href="/about">About</a>
+                
+            </div>
+        </div>
+    </nav>
+
+</header>
+<script>
+    var mobileBtn = function f() {
+        var toggleMenu = document.getElementsByClassName("menu-toggle")[0];
+        var mobileMenu = document.getElementById("mobile-menu");
+        if(toggleMenu.classList.contains("active")){
+           toggleMenu.classList.remove("active")
+            mobileMenu.classList.remove("active")
+        }else{
+            toggleMenu.classList.add("active")
+            mobileMenu.classList.add("active")
+        }
+    }
+</script>
+        <div class="main">
+            <div class="container">
+    
+    
+        <div class="post-toc">
+    <div class="tocbot-list">
+    </div>
+    <div class="tocbot-list-menu">
+        <a class="tocbot-toc-expand" onclick="expand_toc()">Expand all</a>
+        <a onclick="go_top()">Back to top</a>
+        <a onclick="go_bottom()">Go to bottom</a>
+    </div>
+</div>
+
+<script>
+    document.ready(
+        function () {
+            tocbot.init({
+                tocSelector: '.tocbot-list',
+                contentSelector: '.post-content',
+                headingSelector: 'h1, h2, h3, h4, h5',
+                collapseDepth: 1,
+                orderedList: false,
+                scrollSmooth: true,
+            })
+        }
+    )
+
+    function expand_toc() {
+        var b = document.querySelector(".tocbot-toc-expand");
+        tocbot.init({
+            tocSelector: '.tocbot-list',
+            contentSelector: '.post-content',
+            headingSelector: 'h1, h2, h3, h4, h5',
+            collapseDepth: 6,
+            orderedList: false,
+            scrollSmooth: true,
+        });
+        b.setAttribute("onclick", "collapse_toc()");
+        b.innerHTML = "Collapse all"
+    }
+
+    function collapse_toc() {
+        var b = document.querySelector(".tocbot-toc-expand");
+        tocbot.init({
+            tocSelector: '.tocbot-list',
+            contentSelector: '.post-content',
+            headingSelector: 'h1, h2, h3, h4, h5',
+            collapseDepth: 1,
+            orderedList: false,
+            scrollSmooth: true,
+        });
+        b.setAttribute("onclick", "expand_toc()");
+        b.innerHTML = "Expand all"
+    }
+
+    function go_top() {
+        window.scrollTo(0, 0);
+    }
+
+    function go_bottom() {
+        window.scrollTo(0, document.body.scrollHeight);
+    }
+
+</script>
+    
+
+    
+    <article class="post-wrap">
+        <header class="post-header">
+            <h1 class="post-title">Rubik&#39;s Cube</h1>
+            
+                <div class="post-meta">
+                    
+                        Author: <a itemprop="author" rel="author" href="/">RogeWood</a>
+                    
+
+                    
+                        <span class="post-time">
+                        Date: <a href="#">January 25, 2021&nbsp;&nbsp;11:18:30</a>
+                        </span>
+                    
+                    
+                        <span class="post-category">
+                    Category:
+                            
+                                <a href="/categories/%E5%AD%B8%E7%BF%92%E6%97%A5%E8%A8%98/">學習日記</a>
+                            
+                        </span>
+                    
+                </div>
+            
+        </header>
+
+        <div class="post-content">
+            <p>魔方學習資源</p>
+<p>特選上後兩個月一直在睡覺，學一點魔方讓自己看起來沒那麼廢。</p>
+<h2 id="二階"><a href="#二階" class="headerlink" title="二階"></a>二階</h2><p>學二階前建議先學三階，二階為三階去中心。<br>速解容易入門。<br><a target="_blank" rel="noopener" href="https://youtu.be/CfOCXxhCb8U">https://youtu.be/CfOCXxhCb8U</a></p>
+<p>速解學習中…</p>
+<h2 id="三階"><a href="#三階" class="headerlink" title="三階"></a>三階</h2><p>最基礎魔方，學會三階後學其他種就很快了。<br>我只有學基本款，沒學速解。</p>
+<p><a target="_blank" rel="noopener" href="https://www.youtube.com/watch?v=CbzSloi9QIw">https://www.youtube.com/watch?v=CbzSloi9QIw</a></p>
+<h2 id="四階"><a href="#四階" class="headerlink" title="四階"></a>四階</h2><p>基本解法先復原中心與各邊塊，後以三階方式去解。<br>比三階多了中心調整與邊塊調整的公式。</p>
+<p>特殊狀況有單邊反轉與對邊互換。<br><a target="_blank" rel="noopener" href="https://www.youtube.com/watch?v=HuyaNIUaSqo">https://www.youtube.com/watch?v=HuyaNIUaSqo</a></p>
+<h2 id="五階"><a href="#五階" class="headerlink" title="五階"></a>五階</h2><p>一樣是將中心和邊快復原後以三階公式解。</p>
+<p>特殊狀況只有單邊塊反轉。<br><a target="_blank" rel="noopener" href="https://www.youtube.com/watch?v=x7z0CRdi-Is">https://www.youtube.com/watch?v=x7z0CRdi-Is</a></p>
+<h2 id="扭曲三階"><a href="#扭曲三階" class="headerlink" title="扭曲三階"></a>扭曲三階</h2><p>紅綠藍橘的中心有方向性。<br>稍微注意一下中心方向即可以三階的基本方式解。</p>
+<h2 id="Megaminx五魔方"><a href="#Megaminx五魔方" class="headerlink" title="Megaminx五魔方"></a>Megaminx五魔方</h2><p>與三階解法類似。</p>
+<p><a target="_blank" rel="noopener" href="https://www.youtube.com/watch?v=-4j9FZbqlpw&amp;t=559s">https://www.youtube.com/watch?v=-4j9FZbqlpw&amp;t=559s</a></p>
+<h2 id="Skweb斜轉"><a href="#Skweb斜轉" class="headerlink" title="Skweb斜轉"></a>Skweb斜轉</h2><p>公式簡單，以右下左上打全部。</p>
+<p><a target="_blank" rel="noopener" href="https://www.youtube.com/watch?v=8srf9xhsS9k">https://www.youtube.com/watch?v=8srf9xhsS9k</a></p>
+<h2 id="扭曲斜轉"><a href="#扭曲斜轉" class="headerlink" title="扭曲斜轉"></a>扭曲斜轉</h2><p>斜轉的延伸。<br>特殊狀況是有一面的中心塊顏色要反轉，利用白和黃的中心無方向性做兩次三心轉換。</p>
+
+        </div>
+
+        
+            <section class="post-copyright">
+                
+                    <p class="copyright-item">
+                        <span>Author:</span>
+                        <span>RogeWood</span>
+                    </p>
+                
+                
+                    <p class="copyright-item">
+                        <span>Permalink:</span>
+                        <span><a href="http://example.com/2021/01/25/Rubik-s-Cube/">http://example.com/2021/01/25/Rubik-s-Cube/</a></span>
+                    </p>
+                
+                
+                    <p class="copyright-item">
+                        <span>License:</span>
+                        <span>Copyright (c) 2019 <a target="_blank" rel="noopener" href="http://creativecommons.org/licenses/by-nc/4.0/">CC-BY-NC-4.0</a> LICENSE</span>
+                    </p>
+                
+                
+                     <p class="copyright-item">
+                         <span>Slogan:</span>
+                         <span>Do you believe in <strong>DESTINY</strong>?</span>
+                     </p>
+                
+
+            </section>
+        
+        <section class="post-tags">
+            <div>
+                <span>Tag(s):</span>
+                <span class="tag">
+                    
+                    
+                        <a href="/tags/Rubik-s-Cube/"># Rubik's Cube</a>
+                    
+                        
+                </span>
+            </div>
+            <div>
+                <a href="javascript:window.history.back();">back</a>
+                <span>· </span>
+                <a href="/">home</a>
+            </div>
+        </section>
+        <section class="post-nav">
+            
+                <a class="prev" rel="prev" href="/2021/02/03/hello-world/">Hello World</a>
+            
+            
+            <a class="next" rel="next" href="/2021/01/25/Learning-plan/">Learning plan</a>
+            
+        </section>
+
+
+    </article>
+</div>
+
+        </div>
+        <footer id="footer" class="footer">
+    <div class="copyright">
+        <span>© RogeWood | Powered by <a href="https://hexo.io" target="_blank">Hexo</a> & <a href="https://github.com/Siricee/hexo-theme-Chic" target="_blank">Chic</a></span>
+    </div>
+</footer>
+
+    </div>
+</body>
+</html>
